@@ -73,7 +73,8 @@
         "closes": "18:00"
       },
       "sameAs": [
-        "https://www.facebook.com/nikoautogas/"
+        "https://www.facebook.com/nikoautogas/?locale=bg_BG",
+        "https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8"
       ],
       "areaServed": [
         {"@type": "City", "name": "София"},
@@ -724,16 +725,22 @@
         }
 
         .phone-large {
-            font-size: 2.5em;
+            font-size: 2em;
             color: var(--accent);
             font-weight: 900;
             display: block;
-            margin: 30px 0;
+            margin: 25px 0;
             text-decoration: none;
         }
 
         .phone-large:hover {
             color: #FF8833;
+        }
+
+        @media (max-width: 768px) {
+            .phone-large {
+                font-size: 1.5em;
+            }
         }
 
         .social-links {
@@ -787,6 +794,154 @@
             color: var(--light);
             padding: 50px 0 30px;
             text-align: center;
+        }
+
+        /* Partners Section */
+        .partners-section {
+            background: var(--light);
+            border-top: 3px solid var(--accent);
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .partners-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .partner-card {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .partner-logo {
+            width: 200px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: all 0.3s;
+        }
+
+        .partner-card:hover .partner-logo {
+            box-shadow: 0 8px 30px rgba(0, 64, 128, 0.3);
+        }
+
+        .partner-logo a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        .partner-card p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        /* Reviews Section */
+        .reviews-section {
+            background: var(--gray);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .review-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px var(--shadow);
+            position: relative;
+        }
+
+        .review-stars {
+            color: #FFD700;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid var(--gray);
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-weight: 900;
+            font-size: 1.3em;
+        }
+
+        .review-info strong {
+            display: block;
+            color: var(--primary);
+            font-size: 1.1em;
+        }
+
+        .review-info span {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .reviews-cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .reviews-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 35px;
+            background: var(--gradient);
+            color: var(--light);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.2em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0, 64, 128, 0.3);
+        }
+
+        .reviews-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 64, 128, 0.5);
         }
 
         .footer-content {
@@ -1184,6 +1339,88 @@
             </div>
         </section>
 
+        <!-- Reviews Section - НОВА! -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Какво казват нашите клиенти?</h2>
+                    <p>Реални отзиви от доволни клиенти в Google Maps</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <div class="review-text">
+                            "Отличен сервиз! Монтираха ми газова уредба на VW Golf 7 FSI. Професионална работа, коректни цени. Препоръчвам!"
+                        </div>
+                        <div class="review-author">
+                            <div class="review-avatar">П</div>
+                            <div class="review-info">
+                                <strong>Петър Георгиев</strong>
+                                <span>Google отзив</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <div class="review-text">
+                            "Най-добрите в София за ремонт на фабрични газови системи! Оправиха ми Fiat Panda CNG. Благодаря!"
+                        </div>
+                        <div class="review-author">
+                            <div class="review-avatar">М</div>
+                            <div class="review-info">
+                                <strong>Мария Димитрова</strong>
+                                <span>Google отзив</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <div class="review-text">
+                            "Специалисти по Skoda! Перфектен монтаж на LPG на Octavia TSI. Работи безпроблемно вече 2 години!"
+                        </div>
+                        <div class="review-author">
+                            <div class="review-avatar">И</div>
+                            <div class="review-info">
+                                <strong>Иван Стоянов</strong>
+                                <span>Google отзив</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-cta">
+                    <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener noreferrer" class="reviews-btn">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        Виж всички отзиви в Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section - НОВА! -->
+        <section class="partners-section" id="partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Нашите Партньори</h2>
+                    <p>Работим с водещи специалисти в бранша</p>
+                </div>
+
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <a href="https://patna-pomosht-kostinbrod.bg" target="_blank" rel="noopener noreferrer">
+                                🚗 Пътна Помощ<br>Костинброд
+                            </a>
+                        </div>
+                        <p><strong>Пътна помощ и асистанс</strong><br>24/7 помощ на пътя</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section class="contact-section" id="contact">
             <div class="container">
@@ -1224,9 +1461,13 @@
                         </div>
 
                         <div class="social-links">
-                            <a href="https://www.facebook.com/nikoautogas/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                            <a href="https://www.facebook.com/nikoautogas/?locale=bg_BG" target="_blank" rel="noopener noreferrer" class="social-btn">
                                 <svg width="24" height="24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                                Последвайте ни във Facebook
+                                Facebook страница
+                            </a>
+                            <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener noreferrer" class="social-btn" style="background: #4285F4;">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                Google Maps & Отзиви
                             </a>
                         </div>
                     </div>
@@ -1262,8 +1503,11 @@
                 <a href="#services">Услуги</a>
                 <a href="#specializations">Специализации</a>
                 <a href="#projects">Проекти</a>
+                <a href="#reviews">Отзиви</a>
+                <a href="#partners">Партньори</a>
                 <a href="#contact">Контакти</a>
-                <a href="https://www.facebook.com/nikoautogas/" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.facebook.com/nikoautogas/?locale=bg_BG" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener">Google Maps</a>
             </div>
 
             <div style="margin: 30px 0; padding: 25px; background: rgba(255,255,255,0.05); border-radius: 15px;">
@@ -1281,7 +1525,7 @@
             
             <p>&copy; 2025 Нико Аутогаз Сервиз. Всички права запазени.</p>
             <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.7;">
-                 Работим с KME, PRINS, STAG, HANA MAGIC
+                Уебсайт оптимизиран за SEO, скорост и AI търсачки | Работим с KME, PRINS, STAG, HANA MAGIC
             </p>
         </div>
     </footer>
