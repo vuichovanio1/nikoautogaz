@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
     <title>Нико Аутогаз София - Монтаж и Ремонт АГУ VW, Skoda, Fiat, Opel, Iveco | Фабрични Газови и Метанови Инжекциони FSI, GDI | ☎️ 089 568 7142</title>
-    <meta name="description" content="⚡ №1 специалист за ремонт и поддръжка на фабрични газови и метанови системи VW, Skoda, Fiat, Opel, Iveco. Експерти в FSI, GDI директно впръскване и CNG. София-Обеля. 15+ години опит!">
+    <meta name="description" content="⚡ №1 специалист за монтаж, ремонт и поддръжка на фабрични газови и метанови системи VW, Skoda, Fiat, Opel, Iveco. Експерти в FSI, GDI директно вприскване и CNG. София-Обеля. 15+ години опит!">
     <meta name="keywords" content="АГУ София, автогаз VW, газова уредба Skoda, LPG Fiat, CNG Opel, метан Iveco, FSI газова система, GDI LPG монтаж, фабрична газова уредба, ремонт фабрични газови инжекциони, директно вприскване газ, KME София, PRINS Обеля, STAG монтаж, газов инжекцион VW">
     <link rel="canonical" href="https://nikoautogaz.pages.dev/">
- 
+
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
+
     <!-- Favicon -->
     <link rel="icon" href="https://www.shutterstock.com/image-vector/gas-tank-icon-lpg-symbol-260nw-2584323799.jpg" type="image/jpeg">
     <link rel="apple-touch-icon" href="https://www.shutterstock.com/image-vector/gas-tank-icon-lpg-symbol-260nw-2584323799.jpg">
-     <!-- Open Graph -->
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Нико Аутогаз - Монтаж и Ремонт на Фабрични Газови Уредби VW, Skoda, Fiat, Opel, Iveco | София">
     <meta property="og:description" content="№1 специалисти по фабрични CNG/LPG системи и директно вприскване (FSI, TSI, GDI). 15+ години опит. ☎ 089 568 7142">
     <meta property="og:type" content="website">
@@ -31,12 +31,13 @@
     <meta name="twitter:title" content="Нико Аутогаз - Монтаж и Ремонт АГУ София">
     <meta name="twitter:description" content="Фабрични газови и метанови системи за VW, Skoda, Fiat, Opel, Iveco ☎ 089 568 7142">
     <meta name="twitter:image" content="https://nikoautogaz.pages.dev/images/og.jpg">
+
     <!-- Geo Tags -->
     <meta name="geo.region" content="BG-22">
     <meta name="geo.placename" content="София, Обеля">
     <meta name="geo.position" content="42.7339;23.2894">
     <meta name="ICBM" content="42.7339, 23.2894">
- 
+
     <!-- Schema.org -->
     <script type="application/ld+json">
     {
@@ -45,9 +46,9 @@
       "name": "Нико Аутогаз Сервиз",
       "alternateName": "Nico Autogas Sofia",
       "image": [
+        "https://nikoautogaz.pages.dev/images/og.jpg",
         "https://nikoautogaz.pages.dev/images/disko.webp",
-        "https://nikoautogaz.pages.dev/images/cheroki.webp",
-        "https://nikoautogaz.pages.dev/images/xc.webp"
+        "https://nikoautogaz.pages.dev/images/cheroki.webp"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -199,6 +200,7 @@
             z-index: 1000;
             border-bottom: 3px solid var(--accent);
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+            transition: padding 0.3s;
         }
         .header-content {
             max-width: 1400px;
@@ -231,6 +233,7 @@
             border-radius: 8px;
             font-size: 1.5em;
             cursor: pointer;
+            z-index: 1001;
         }
         nav {
             display: flex;
@@ -781,37 +784,53 @@
         .footer-links a:hover {
             color: #FF8833;
         }
+
+        /* Мобилно меню */
         @media (max-width: 968px) {
             .mobile-menu-btn {
                 display: block;
             }
             nav {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
                 width: 100%;
-                flex-direction: column;
                 background: rgba(0, 26, 51, 0.98);
-                padding: 15px 0;
-                border-radius: 10px;
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                gap: 0;
+                padding: 20px 0;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
             }
             nav.active {
                 display: flex;
             }
             nav a {
-                padding: 12px 20px;
+                padding: 15px 25px;
+                font-size: 1.2em;
                 border-bottom: 1px solid rgba(255,255,255,0.1);
             }
             nav a:last-child {
                 border-bottom: none;
+            }
+            .header-content {
+                flex-wrap: wrap;
+            }
+            .phone-header {
+                order: 3;
+                width: 100%;
+                margin-top: 15px;
             }
             .hero {
                 margin-top: 160px;
             }
             .trust-badges {
                 flex-direction: column;
-                gap: 25px;
+                gap: 30px;
             }
             .container {
-                padding: 50px 20px;
+                padding: 60px 20px;
             }
             .cta-group {
                 flex-direction: column;
@@ -822,6 +841,7 @@
             .contact-item {
                 flex-direction: column;
                 text-align: center;
+                gap: 10px;
             }
         }
     </style>
@@ -1130,7 +1150,7 @@
                 </div>
                 <div class="partners-grid">
                     <div class="partner-card">
-                        <h3>Транспортер Иван Иванов ЕООД</h3>
+                        <h4>Транспортер Иван Иванов ЕООД</h4>
                         <p><strong>Пътна помощ и асистанс</strong><br>24/7 помощ на пътя</p>
                         <a href="https://patna-pomosht-kostinbrod.bg" target="_blank" rel="noopener noreferrer" class="partner-link">
                             Посети сайта
@@ -1147,7 +1167,7 @@
                     <p style="color: rgba(255,255,255,0.9);">Обадете се за безплатна консултация и оферта</p>
                 </div>
                 <div class="contact-info">
-                    <h3>📞 Обадете се сега </h3>
+                    <h3>📞 Директна Връзка</h3>
                     <div class="contact-item">
                         <span class="contact-item-icon">📱</span>
                         <div>
@@ -1174,9 +1194,11 @@
                     </div>
                     <div class="social-links">
                         <a href="https://www.facebook.com/nikoautogas/?locale=bg_BG" target="_blank" rel="noopener noreferrer" class="social-btn">
+                            <svg width="24" height="24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                             Facebook страница
                         </a>
                         <a href="https://maps.app.goo.gl/5UjoDQrCE9BPyyNm8" target="_blank" rel="noopener noreferrer" class="social-btn" style="background: #4285F4;">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                             Google Maps & Отзиви
                         </a>
                     </div>
@@ -1213,18 +1235,24 @@
     </footer>
 
     <script>
+        // Mobile menu toggle
         const menuBtn = document.getElementById('menuBtn');
         const mainNav = document.getElementById('mainNav');
+
         menuBtn.addEventListener('click', () => {
             mainNav.classList.toggle('active');
             menuBtn.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
         });
+
+        // Close menu when clicking a link
         document.querySelectorAll('#mainNav a').forEach(link => {
             link.addEventListener('click', () => {
                 mainNav.classList.remove('active');
                 menuBtn.textContent = '☰';
             });
         });
+
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1234,6 +1262,8 @@
                 }
             });
         });
+
+        // Header padding on scroll
         const header = document.querySelector('header');
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 100) {
