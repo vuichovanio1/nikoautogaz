@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+  
     <title>Нико Аутогаз София - Монтаж и Ремонт АГУ VW, Skoda, Fiat, Opel, Iveco | Фабрични Газови и Метанови Инжекциони FSI, GDI | ☎️ 089 568 7142</title>
     <meta name="description" content="⚡ №1 специалист за монтаж, ремонт и поддръжка на фабрични газови и метанови системи VW, Skoda, Fiat, Opel, Iveco. Експерти в FSI, GDI директно вприскване и CNG. София-Обеля. 15+ години опит!">
     <meta name="keywords" content="АГУ София, автогаз VW, газова уредба Skoda, LPG Fiat, CNG Opel, метан Iveco, FSI газова система, GDI LPG монтаж, фабрична газова уредба, ремонт фабрични газови инжекциони, директно вприскване газ, KME София, PRINS Обеля, STAG монтаж, газов инжекцион VW">
     <link rel="canonical" href="https://nikoautogaz.pages.dev/">
-   
+  
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   
+  
     <!-- Favicon - Модерна икона на газов резервоар в синьо/оранжево -->
     <link rel="icon" href="https://www.shutterstock.com/image-vector/gas-tank-icon-lpg-symbol-260nw-2584323799.jpg" type="image/jpeg">
     <link rel="apple-touch-icon" href="https://www.shutterstock.com/image-vector/gas-tank-icon-lpg-symbol-260nw-2584323799.jpg">
-   
+  
     <!-- Open Graph - Професионална снимка на монтаж на газова система в сервиз -->
     <meta property="og:title" content="Нико Аутогаз - Монтаж и Ремонт на Фабрични АГУ за VW, Skoda, Fiat, Opel | София">
     <meta property="og:description" content="Специалисти по монтаж, ремонт и поддръжка на фабрични газови и метанови системи с директно вприскване. FSI, GDI, CNG експертиза.">
@@ -26,18 +26,18 @@
     <meta property="og:image" content="https://media.istockphoto.com/id/182779089/photo/mechanic-installs-a-tank-for-liquefied-petroleum-gas.jpg?s=612x612&w=0&k=20&c=3RraU7HD_7jCNHiyhL_KTSeuV5jIUhdd40PpM943-AU=">
     <meta property="og:image:width" content="612">
     <meta property="og:image:height" content="391">
-   
+  
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Нико Аутогаз - Монтаж и Ремонт АГУ София">
     <meta name="twitter:description" content="Фабрични газови и метанови системи за VW, Skoda, Fiat, Opel, Iveco">
-   
+  
     <!-- Geo Tags -->
     <meta name="geo.region" content="BG-22">
     <meta name="geo.placename" content="София, Обеля">
     <meta name="geo.position" content="42.7339;23.2894">
     <meta name="ICBM" content="42.7339, 23.2894">
-   
+  
     <!-- Schema.org -->
     <script type="application/ld+json">
     {
@@ -132,7 +132,7 @@
       ]
     }
     </script>
-   
+  
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
     {
@@ -209,7 +209,7 @@
       }]
     }
     </script>
-   
+  
     <style>
         :root {
             --primary: #004080;
@@ -728,36 +728,57 @@
         .partner-card {
             text-align: center;
             transition: transform 0.3s;
+            background: var(--gray);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px var(--shadow);
+            max-width: 300px;
         }
         .partner-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 35px rgba(0, 64, 128, 0.2);
         }
         .partner-logo {
-            width: 200px;
-            height: 80px;
+            width: 100%;
+            height: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--gradient);
             border-radius: 15px;
-            padding: 20px;
             margin-bottom: 15px;
-            box-shadow: 0 5px 20px var(--shadow);
-            transition: all 0.3s;
+            overflow: hidden;
         }
-        .partner-card:hover .partner-logo {
-            box-shadow: 0 8px 30px rgba(0, 64, 128, 0.3);
+        .partner-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s;
         }
-        .partner-logo a {
-            color: var(--light);
-            text-decoration: none;
-            font-weight: 900;
-            font-size: 1.3em;
-            text-align: center;
+        .partner-card:hover .partner-logo img {
+            transform: scale(1.05);
+        }
+        .partner-card h4 {
+            font-size: 1.4em;
+            color: var(--primary);
+            margin-bottom: 10px;
         }
         .partner-card p {
             color: #666;
             font-size: 1em;
+        }
+        .partner-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--gradient);
+            color: var(--light);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+        .partner-link:hover {
+            box-shadow: 0 5px 15px rgba(0, 64, 128, 0.3);
         }
         /* Reviews Section */
         .reviews-section {
@@ -1075,7 +1096,7 @@
                                 <li>Професионален демонтаж</li>
                                 <li>Upgrade 4-то поколение</li>
                                 <li>Модернизация на компоненти</li>
-                               
+                              
                             </ul>
                         </div>
                     </div>
@@ -1090,8 +1111,8 @@
                     <p>Галерия от наши успешни монтажи на различни автомобили</p>
                 </div>
                 <div class="projects-grid">
-                    
-                    <a href="https://www.facebook.com/photo/?fbid=1427391299395839&set=pcb.1427391456062490" target="_blank" class="project-card">
+                   
+                    <div class="project-card">
                         <img src="images/cheroki.webp" alt="JEEP GRAND CHEROKEE 3.6 LPG монтаж София" class="project-image" loading="lazy" width="400" height="280">
                         <div class="project-info">
                             <h3>JEEP GRAND CHEROKEE 3.6</h3>
@@ -1100,8 +1121,8 @@
                                 Pentavalve инжектори и toroid резервоар.
                             </p>
                         </div>
-                    </a>
-                    <a href="https://www.facebook.com/photo/?fbid=1415622790572690&set=pcb.1415622993906003" target="_blank" class="project-card">
+                    </div>
+                    <div class="project-card">
                         <img src="images/disko.webp" alt="LAND ROVER DISCOVERY газова уредба" class="project-image" loading="lazy" width="400" height="280">
                         <div class="project-info">
                             <h3>LAND ROVER DISCOVERY</h3>
@@ -1110,8 +1131,8 @@
                                 60-литров тороидален резервоар.
                             </p>
                         </div>
-                    </a>
-                    <a href="https://www.facebook.com/photo/?fbid=1389907149810921&set=pcb.1389907393144230" target="_blank" class="project-card">
+                    </div>
+                    <div class="project-card">
                         <img src="images/ren.webp" alt="JEEP RENEGADE 2.4 автогаз" class="project-image" loading="lazy" width="400" height="280">
                         <div class="project-info">
                             <h3>JEEP RENEGADE 2.4</h3>
@@ -1120,8 +1141,8 @@
                                 720/225 тороидален резервоар.
                             </p>
                         </div>
-                    </a>
-                    <a href="https://www.facebook.com/photo/?fbid=1319105326891104&set=pcb.1319105566891080" target="_blank" class="project-card">
+                    </div>
+                    <div class="project-card">
                         <img src="images/xc.webp" alt="VOLVO XC 60 2.0T PRINS LPG" class="project-image" loading="lazy" width="400" height="280">
                         <div class="project-info">
                             <h3>VOLVO XC 60 2.0T</h3>
@@ -1130,8 +1151,8 @@
                                 40-литров цилиндричен резервоар.
                             </p>
                         </div>
-                    </a>
-                    <a href="https://www.facebook.com/nikoautogas/" target="_blank" class="project-card">
+                    </div>
+                    <div class="project-card">
                         <img src="images/tig.webp" alt="VW TIGUAN 2.0TFSI PRINS VSI DI-3 +720/250 tor.tank" class="project-image" loading="lazy" width="400" height="280">
                         <div class="project-info">
                             <h3>VW TIGUAN 2.0TFSI</h3>
@@ -1140,7 +1161,7 @@
                                 KME Nevo система с високонапорни инжектори.
                             </p>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1251,11 +1272,13 @@
                 <div class="partners-grid">
                     <div class="partner-card">
                         <div class="partner-logo">
-                            <a href="https://patna-pomosht-kostinbrod.bg" target="_blank" rel="noopener noreferrer">
-                                🚗 Пътна Помощ<br>Костинброд
-                            </a>
+                            <img src="https://via.placeholder.com/200x80?text=Пътна+Помощ+Костинброд" alt="Лого на Пътна Помощ Костинброд" loading="lazy">
                         </div>
+                        <h4>Пътна Помощ Костинброд</h4>
                         <p><strong>Пътна помощ и асистанс</strong><br>24/7 помощ на пътя</p>
+                        <a href="https://patna-pomosht-kostinbrod.bg" target="_blank" rel="noopener noreferrer" class="partner-link">
+                            Посети сайта
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1270,7 +1293,7 @@
                 <div class="contact-grid">
                     <div class="contact-info">
                         <h3>📞 Директна Връзка</h3>
-                       
+                      
                         <div class="contact-item">
                             <span class="contact-item-icon">📱</span>
                             <div>
@@ -1343,7 +1366,7 @@
             </div>
             <div style="margin: 30px 0; padding: 25px; background: rgba(255,255,255,0.05); border-radius: 15px;">
                 <p style="font-size: 1.2em;"><strong>📞 Телефон:</strong> <a href="tel:+359895687142" style="color: var(--accent); text-decoration: none;">089 568 7142</a></p>
-                
+               
             <p style="margin-top: 10px;"><strong>📍 Адрес:</strong> ул. Еърсофт, зад Евромастер, район Обеля, София</p>
             </div>
             <p style="margin-top: 25px; font-size: 0.95em; opacity: 0.8;">
@@ -1351,7 +1374,7 @@
                 Hyundai, Kia, Mazda (GDI) • Всички марки и модели
             </p>
             <hr style="margin: 35px 0; border: none; border-top: 1px solid rgba(255,255,255,0.1);">
-           
+          
             <p>&copy; 2026 Нико Аутогаз Сервиз. Всички права запазени.</p>
             <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.7;">
                Работим с KME, PRINS, STAG, HANA MAGIC
@@ -1363,7 +1386,7 @@
         // Mobile menu toggle
         const menuBtn = document.getElementById('menuBtn');
         const mainNav = document.getElementById('mainNav');
-       
+      
         menuBtn.addEventListener('click', () => {
             mainNav.classList.toggle('active');
             menuBtn.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
@@ -1388,16 +1411,16 @@
         // Header scroll effect
         const header = document.querySelector('header');
         let lastScroll = 0;
-       
+      
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
-           
+          
             if (currentScroll > 100) {
                 header.style.padding = '10px 0';
             } else {
                 header.style.padding = '15px 0';
             }
-           
+          
             lastScroll = currentScroll;
         });
         // Lazy loading fallback
